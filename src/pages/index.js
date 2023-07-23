@@ -8,15 +8,9 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import mh from "public/mh.png";
-import web1 from "public/web1.png";
-import web2 from "public/web2.png";
-import web3 from "public/web3.png";
-import web4 from "public/web4.png";
-import web5 from "public/web5.png";
-import web6 from "public/web6.png";
 import { useState } from "react";
 import Link from "next/link";
-import { cardsData } from "@/data";
+import { cardsData, projects } from "@/data";
 
 const burtons = Burtons({ src: "../../public/Burtons.otf" });
 
@@ -59,10 +53,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl sm:text-5xl">
               Mohammadhossein Asadi
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">Front-end Developer</h3>
+            <h3 className="text-2xl py-2 md:text-4xl">Front-end Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-400">
               Experienced Front-end developer specialized in ReactJS and NextJS,
               with two years of professional experience. Strong team player
@@ -130,7 +124,7 @@ export default function Home() {
                   width={100}
                   height={100}
                 />
-                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                <h3 className="text-xl font-medium pt-8 pb-2 dark:text-gray-200">
                   {card.title}
                 </h3>
                 <p className="dark:text-gray-400">{card.description}</p>
@@ -138,7 +132,7 @@ export default function Home() {
                 {card.tools.map((item) => (
                   <p
                     key={item}
-                    className="text-gray-800 py-1 dark:text-gray-400"
+                    className="font-medium text-gray-800 py-1 dark:text-gray-400"
                   >
                     {item}
                   </p>
@@ -167,66 +161,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                alt="web1"
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                alt="web2"
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                alt="web3"
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                alt="web4"
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                alt="web5"
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                alt="web6"
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
-            </div>
+            {projects.map((project) => (
+              <div key={project.alt} className="basis-1/3 flex-1">
+                <Image
+                  src={project.src}
+                  alt={project.alt}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </div>
+            ))}
           </div>
         </section>
       </main>

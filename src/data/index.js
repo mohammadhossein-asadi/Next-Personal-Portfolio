@@ -27,3 +27,12 @@ export const cardsData = [
     tools: ["Material UI", "Tailwind CSS", "Bootstrap"],
   },
 ];
+
+export const projects = [
+  { alt: "project1", src: "/web1.png" },
+  { alt: "project2", src: "/web2.png" },
+  { alt: "project3", src: "/web3.png" },
+  { alt: "project4", src: "/web4.png" },
+  { alt: "project5", src: "/web5.png" },
+  { alt: "project6", src: "/web6.png" },
+];
