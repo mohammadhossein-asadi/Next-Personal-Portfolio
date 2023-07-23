@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Head from "next/head";
 import Burtons from "next/font/local";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
@@ -8,9 +8,6 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import mh from "public/mh.png";
-import design from "public/design.png";
-import code from "public/code.png";
-import consulting from "public/consulting.png";
 import web1 from "public/web1.png";
 import web2 from "public/web2.png";
 import web3 from "public/web3.png";
@@ -19,6 +16,7 @@ import web5 from "public/web5.png";
 import web6 from "public/web6.png";
 import { useState } from "react";
 import Link from "next/link";
+import { cardsData } from "@/data";
 
 const burtons = Burtons({ src: "../../public/Burtons.otf" });
 
@@ -120,78 +118,33 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image
-                className="mx-auto"
-                src={design}
-                alt="design"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                Beautiful Designs
-              </h3>
-              <p className="dark:text-gray-400">
-                Creating elegant designs and implementing them according to your
-                needs based on the original design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">
-                Style implementation tools I use
-              </h4>
-              <p className="text-gray-800 py-1 dark:text-gray-400">
-                Material Ui
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Tailwind</p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Bootstrap</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image
-                className="mx-auto"
-                src={consulting}
-                alt="design"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                Beautiful Designs
-              </h3>
-              <p className="dark:text-gray-400">
-                Creating elegant designs and implementing them according to your
-                needs based on the original design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">
-                Style implementation tools I use
-              </h4>
-              <p className="text-gray-800 py-1 dark:text-gray-400">
-                Material Ui
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Tailwind</p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Bootstrap</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image
-                className="mx-auto"
-                src={code}
-                alt="design"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
-                Beautiful Designs
-              </h3>
-              <p className="dark:text-gray-400">
-                Creating elegant designs and implementing them according to your
-                needs based on the original design theory.
-              </p>
-              <h4 className="py-4 text-teal-600">
-                Style implementation tools I use
-              </h4>
-              <p className="text-gray-800 py-1 dark:text-gray-400">
-                Material Ui
-              </p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Tailwind</p>
-              <p className="text-gray-800 py-1 dark:text-gray-400">Bootstrap</p>
-            </div>
+            {cardsData.map((card) => (
+              <div
+                key={card.id}
+                className="text-center shadow-lg p-10 rounded-xl my-10"
+              >
+                <Image
+                  className="mx-auto"
+                  src={card.imageUrl}
+                  alt="design"
+                  width={100}
+                  height={100}
+                />
+                <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-200">
+                  {card.title}
+                </h3>
+                <p className="dark:text-gray-400">{card.description}</p>
+                <h4 className="py-4 text-teal-600">{card.toolsTitle}</h4>
+                {card.tools.map((item) => (
+                  <p
+                    key={item}
+                    className="text-gray-800 py-1 dark:text-gray-400"
+                  >
+                    {item}
+                  </p>
+                ))}
+              </div>
+            ))}
           </div>
         </section>
         <section>
