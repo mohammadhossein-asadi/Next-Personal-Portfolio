@@ -8,6 +8,7 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import mh from "public/mh.png";
+import logo from "public/logo.png";
 import { useState } from "react";
 import Link from "next/link";
 import { cardsData, projects } from "@/data";
@@ -25,9 +26,14 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className={`text-xl dark:text-gray-200 ${burtons.className}`}>
-              Mohammadhossein
-            </h1>
+            <div className="flex justify-center items-center cursor-pointer">
+              <Image src={logo} alt="logo" width={50} height={50} />
+              <h1
+                className={`text-xl dark:text-gray-200 ${burtons.className} pl-4`}
+              >
+                Mohammadhossein
+              </h1>
+            </div>
             <ul className="flex items-center">
               <li>
                 {darkMode ? (
