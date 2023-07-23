@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Mohammad_sd Portfolio</title>
+        <title>Mohammadhs Portfolio</title>
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
@@ -56,7 +56,9 @@ export default function Home() {
             <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl sm:text-5xl">
               Mohammadhossein Asadi
             </h2>
-            <h3 className="text-2xl py-2 md:text-4xl">Front-end Developer</h3>
+            <h3 className="text-2xl py-2 md:text-4xl dark:text-gray-200">
+              Front-end Developer
+            </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-400">
               Experienced Front-end developer specialized in ReactJS and NextJS,
               with two years of professional experience. Strong team player
