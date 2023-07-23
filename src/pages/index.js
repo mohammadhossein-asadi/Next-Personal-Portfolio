@@ -97,16 +97,16 @@ export default function Home() {
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               As a <span className="text-teal-500">front-end</span> programmer,
-              I'm thrilled to offer you a wide array of services that cater to
+              Im thrilled to offer you a wide array of services that cater to
               your specific needs. Whether you need help with brand design to
               give your business a unique identity, or require{" "}
               <span className="text-teal-500">top-notch</span> programming
-              skills to bring your website to life, I've got you covered.
+              skills to bring your website to life, Ive got you covered.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              Moreover, I absolutely love sharing my knowledge, so if you're
+              Moreover, I absolutely love sharing my knowledge, so if youre
               interested in <span className="text-teal-500">learning</span>, I
-              offer personalized teaching and training sessions too. Let's{" "}
+              offer personalized teaching and training sessions too. Lets{" "}
               <span className="text-teal-500">collaborate</span> and create
               something amazing together!
             </p>
@@ -146,16 +146,16 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-gray-200">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-500">
               As a <span className="text-teal-500">front-end</span> programmer,
-              I'm thrilled to offer you a wide array of services that cater to
+              Im thrilled to offer you a wide array of services that cater to
               your specific needs. Whether you need help with brand design to
               give your business a unique identity, or require{" "}
               <span className="text-teal-500">top-notch</span> programming
-              skills to bring your website to life, I've got you covered.
+              skills to bring your website to life, Ive got you covered.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-500">
-              Moreover, I absolutely love sharing my knowledge, so if you're
+              Moreover, I absolutely love sharing my knowledge, so if youre
               interested in <span className="text-teal-500">learning</span>, I
-              offer personalized teaching and training sessions too. Let's{" "}
+              offer personalized teaching and training sessions too. Lets{" "}
               <span className="text-teal-500">collaborate</span> and create
               something amazing together!
             </p>
