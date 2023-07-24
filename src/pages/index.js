@@ -25,8 +25,8 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <div className="flex justify-center items-center cursor-pointer">
+          <nav className="py-10 mb-12 flex justify-between xss:flex-col-reverse">
+            <div className="flex justify-center items-center cursor-pointer xss:pt-6">
               <Image src={logo} alt="logo" width={50} height={50} />
               <h1
                 className={`text-xl dark:text-gray-200 ${burtons.className} pl-4`}
@@ -34,7 +34,7 @@ export default function Home() {
                 Mohammadhossein
               </h1>
             </div>
-            <ul className="flex items-center">
+            <ul className="flex items-center xss:justify-between">
               <li>
                 {darkMode ? (
                   <BsFillSunFill
@@ -60,7 +60,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl sm:text-5xl">
+            <h2 className="text-4xl py-2 text-teal-600 font-medium md:text-6xl sm:text-5xl xss:text-2xl xss:font-bold">
               Mohammadhossein Asadi
             </h2>
             <h3 className="text-2xl py-2 md:text-4xl dark:text-gray-200">
@@ -90,7 +90,7 @@ export default function Home() {
               <AiFillTwitterCircle />
             </Link>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 xss:right-2">
             <Image
               src={mh}
               alt="mohammadhossein"
