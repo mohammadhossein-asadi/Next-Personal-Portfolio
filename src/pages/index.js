@@ -154,19 +154,14 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-200">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-500">
-              As a <span className="text-teal-500">front-end</span> programmer,
-              Im thrilled to offer you a wide array of services that cater to
-              your specific needs. Whether you need help with brand design to
-              give your business a unique identity, or require{" "}
-              <span className="text-teal-500">top-notch</span> programming
-              skills to bring your website to life, Ive got you covered.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-500">
-              Moreover, I absolutely love sharing my knowledge, so if youre
-              interested in <span className="text-teal-500">learning</span>, I
-              offer personalized teaching and training sessions too. Lets{" "}
-              <span className="text-teal-500">collaborate</span> and create
-              something amazing together!
+              In need of a skilled{" "}
+              <span className="text-teal-500">front-end</span> programmer to
+              transform your ideas into captivating websites and web
+              applications? Your search ends here! With over 2 years of
+              experience in front-end development, I offer{" "}
+              <span className="text-teal-500">top-notch</span> services that
+              will <span className="text-teal-500">enhance</span> your online
+              presence.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
