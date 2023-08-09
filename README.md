@@ -1,4 +1,4 @@
-# Portfolio Website
+# NextJs Portfolio Website
 
 Welcome to the portfolio website project repository! Here, you'll find the source code and assets for my modern portfolio website.
 
